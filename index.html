@@ -1,181 +1,166 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edson imports</title>
+    <meta name="description" content="Edson Imports - Loja especializada em produtos Apple importados">
+    <title>Edson Imports - Produtos Apple Importados</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
-<style>
-    #products .container nav ul{
-    display: flex;
-    align-items: center;
-}
-    #products .container nav ul li a {
-        width: 50px;
-        height: 50px;
-
-    }
-</style>
 <body>
     <header>
         <div class="container">
-            <h1>Edson imports</h1>
-            <ul>
-                <li>
-                    <a href="#products">Produtos</a>
-                </li>
-            </ul>
+            <h1>Edson Imports</h1>
+            <button class="menu-hamburguer" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
-    <main class="container">
-    <section id="products">
-        <div class="container">
-            <nav>
-                <table class="product-table">
-                    <thead>
-                        <tr>
-                            <th colspan="4">Produtos Apple</th> 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="#AppleIphones">
-                                    <img src="./imagens/store-card-iphone.png" alt="Ir para seção de Iphones">
-                                    <p>iPhones</p>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="#AppleMacBooks">
-                                    <img src="./imagens/store-card-mac.png" alt="Ir para seção de MacBooks">
-                                    <p>MacBooks</p>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="#AppleIpads">
-                                    <img src="./imagens/store-card-pad.png" alt="Ir para seção de Ipads">
-                                    <p>iPads</p>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </nav>
-        </div>
-    </section>
-    <section id="AppleIphones">
-        <div class="container">
-            <table class="product-table">
-                <thead>
-                    <tr>
-                        
-                        <th colspan="3">iPhones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        
-                        <td>
-                            <img src="./imagens/iphone_16_pro_max.jpg" alt="iPhone 16 Pro Max">
-                            <p>iPhone 16 Pro Max</p>
-                            <h3>U$ 1133</h3>
-                            <button>Comprar</button>
-                        </td>
-                        <td>
-                            <img src="./imagens/iphone_15.jpg" alt="iPhone 15">
-                            <p>iPhone 15</p>
-                            <h3>U$ 850</h3>
-                            <button>Comprar</button>
-                        </td>
-                        <td>
-                            <img src="./imagens/iphone_16.jpg" alt="iPhone 16">
-                            <p>iPhone 16</p>
-                            <h3>U$ 999</h3>
-                            <button>Comprar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section id="AppleMacBooks">
-        <div class="container">
-            <table class="product-table">
-                <thead>
-                    <tr>
-                        
-                        <th colspan="3">MacBooks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        
-                        <td>
-                            <img src="./imagens/nmacbook_air_m2_2024.jpg" alt="MacBook AIR M2 2024">
-                            <p>MacBook AIR M2 2024</p>
-                            <h3>U$ 870</h3>
-                            <button>Comprar</button>
-                        </td>
-                        <td>
-                            <img src="./imagens/macbook_m3_pro_2023.jpg" alt="MacBook M3 PRO 2023">
-                            <p>MacBook M3 PRO 2023</p>
-                            <h3>U$ 1860</h3>
-                            <button>Comprar</button>
-                        </td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-        <section id="AppleIpads">
+        <nav class="nav-menu">
             <div class="container">
-                <table class="product-table"> 
-                    <thead>
-                        <tr>
-                            <th colspan="3">iPad</th>
-                        </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="./imagens/ipad_pro.jpg" alt="iPad PRO">
-                            <p>iPad PRO</p>
-                            <h3>U$ 960</h3>
-                            <button>Comprar</button>
-                            
-                        </td>
-                        <td>
-                            
-                            <img src="./imagens/pad_10a.jpg" alt="iPad 10a Geração">
-                            <p>iPad 10a Geração</p>
-                            <h3>U$ 380</h3>
-                            <button>Comprar</button>
-                        </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section id="sobre" class="sobre-a-loja">
+            <div class="container">
+                <img src="./imagens/iplace-apple-premium-reseller-1024x683.webp" alt="Loja física Edson Imports">
+                <div class="sobre-texto">
+                    <h2>Sobre a Edson Imports</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quos magnam incidunt saepe ipsa vel temporibus, porro magni fugit expedita, laborum aliquid iste quia in aut veritatis iure at nesciunt.</p>
+                    <p>Especializados em produtos Apple importados, oferecemos as melhores condições de pagamento e garantia de 1 ano para todos os nossos produtos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="categorias-carrossel">
+                <div class="categoria-card">
+                    <a href="#AppleIphones">
+                        <img src="./imagens/store-card-iphone.png" alt="iPhones">
+                        <h3>iPhones</h3>
+                    </a>
+                </div>
+                <div class="categoria-card">
+                    <a href="#AppleMacBooks">
+                        <img src="./imagens/store-card-mac.png" alt="MacBooks">
+                        <h3>MacBooks</h3>
+                    </a>
+                </div>
+                <div class="categoria-card">
+                    <a href="#AppleIpads">
+                        <img src="./imagens/store-card-pad.png" alt="iPads">
+                        <h3>iPads</h3>
+                    </a>
+                </div>
+                <div class="categoria-card">
+                    <a href="#AppleWatch">
+                        <img src="./imagens/store-card-13-watch-nav-202409.png" alt="Watch">
+                        <h3>Watch</h3>
+                    </a>
+                </div>
+                <div class="categoria-card">
+                    <a href="#AppleAirpods">
+                        <img src="./imagens/card-airpods.png" alt="Airpods">
+                        <h3>Airpods</h3>
+                    </a>
+                </div>
+                <div class="categoria-card">
+                    <a href="#AppleAcessorio">
+                        <img src="./imagens/acessorios.png" alt="Acessorio">
+                        <h3>Acessorios</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="AppleIphones" class="produtos-section">
+    <h2 class="section-title">iPhones</h2>
+    <div class="produtos-grid">
+        
+    </div>
+</section>
+
+        <section id="AppleMacBooks" class="produtos-section">
+            <h2 class="section-title">MacBooks</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="./imagens/nmacbook_air_m2_2024.jpg" alt="MacBook Air M2 2024">
+                    <h3>MacBook Air M2 2024</h3>
+                    <p class="preco">U$ 870,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto-card">
+                    <img src="./imagens/macbook_m3_pro_2023.jpg" alt="MacBook M3 Pro 2023">
+                    <h3>MacBook M3 Pro 2023</h3>
+                    <p class="preco">U$ 1.860,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="AppleIpads" class="produtos-section">
+            <h2 class="section-title">iPads</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="./imagens/ipad_pro.jpg" alt="iPad Pro">
+                    <h3>iPad Pro</h3>
+                    <p class="preco">U$ 960,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto-card">
+                    <img src="./imagens/pad_10a.jpg" alt="iPad 10ª Geração">
+                    <h3>iPad 10ª Geração</h3>
+                    <p class="preco">U$ 380,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
             </div>
         </section>
     </main>
-        <footer>
-            <div class="container">
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Edson Imports</h3>
+                    <p>Endereço: Rua Exemplo, 123 - Centro</p>
+                    <p>Telefone: (00) 1234-5678</p>
+                    <p>Email: contato@edsonimports.com</p>
+                </div>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/">
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://web.whatsapp.com/">
-                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://web.whatsapp.com/" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
-                <p>&copy;2025 Edson Imports. Todos os direitos reservados</p>
             </div>
-        </footer>
+            <div class="copyright">
+                <p>&copy; 2025 Edson Imports. Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/produtos.js"></script>
 </body>
 </html>
