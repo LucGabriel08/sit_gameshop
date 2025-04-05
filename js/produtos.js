@@ -9,9 +9,26 @@ $(document).ready(function() {
                 preco: "U$ 1.133,00", 
                 imagem: "imagens/iphone_16_pro_max.jpg", 
                 descricao: "O mais avançado iPhone com câmera profissional"
-            }
+            },
+            { 
+                id: 3,
+                nome: "iPhone 16", 
+                preco: "U$ 999,00", 
+                imagem: "imagens/iphone_16.jpg", 
+                descricao: "Excelente custo-benefício com chip A16 Bionic"
+            },
+            { 
+                id: 2,
+                nome: "iPhone 15", 
+                preco: "U$ 799,00", 
+                imagem: "imagens/iphone_15.jpg", 
+                descricao: "Excelente custo-benefício com chip A16 Bionic"
+            },
+            
+            
             
         ],
+        
         macbooks: [
             {
                 id: 10,
@@ -19,8 +36,21 @@ $(document).ready(function() {
                 preco: "U$ 870,00",
                 imagem: "imagens/nmacbook_air_m2_2024.jpg", 
                 descricao: "Leve, potente e com grande duração de bateria"
-            }
-            
+            },
+            {
+                id: 11,
+                nome: "MacBook M3 PRO 2023",
+                preco: "U$ 1860,00",
+                imagem: "./imagens/macbook_m3_pro_2023.jpg", 
+                descricao: "Leve, potente e com grande duração de bateria"
+            },
+            {
+                id: 12,
+                nome: "MacBook Air M1 2020",
+                preco: "U$ 750,00",
+                imagem: "./imagens/macbook_air_2020.jpg", 
+                descricao: "Leve, potente e com grande duração de bateria"
+            },
             
         ],
         ipads: [
@@ -30,10 +60,35 @@ $(document).ready(function() {
                 preco: "U$ 960,00",
                 imagem: "imagens/ipad_pro.jpg", 
                 descricao: "Desempenho profissional em um tablet"
+            },
+            {
+                id: 21,
+                nome: "iPad 10a Geração",
+                preco: "U$ 380,00",
+                imagem: "imagens/pad_10a.jpg", 
+                descricao: "Desempenho profissional em um tablet"
+            },
+            {
+                id: 22,
+                nome: "iPad mini",
+                preco: "U$ 310,00",
+                imagem: "imagens/ipad_mini.jfif", 
+                descricao: "Desempenho profissional em um tablet"
             }
             
+        ],
+        Watchs: [
+            {
+                id: 30,
+                nome: "Apple Watch Series 9",
+                preco: "U$ 399,00",
+                imagem: "imagens/watch_series_9.jpg", 
+                descricao: "Desempenho profissional em um tablet"
+            },
+            
+            
         ]
-        
+
     };
 
     
