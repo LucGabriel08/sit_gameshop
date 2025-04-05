@@ -1,4 +1,4 @@
-/* Reset Básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Cabeçalho */
+
 header {
     background-color: #182c61;
     color: white;
@@ -69,7 +69,6 @@ header {
     margin-bottom: 15px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     #sobre .container {
         flex-direction: column;
@@ -97,7 +96,7 @@ header {
     align-items: center;
 }
 
-/* Menu Hamburguer (mobile) */
+
 .menu-hamburguer {
     width: 30px;
     height: 20px;
@@ -149,7 +148,6 @@ header {
     font-size: 40px;
 }
 
-/* Navegação */
 nav ul {
     display: flex;
     list-style: none;
@@ -181,13 +179,13 @@ nav a {
     padding: 0 20px;
 }
 
-/* Seção de Produtos */
+
 .section-title {
     text-align: center;
     margin: 40px 0;
 }
 
-/* Categorias */
+
 .categorias {
     display: flex;
     justify-content: space-around;
@@ -208,7 +206,7 @@ nav a {
     max-width: 200px;
 }
 
-/* Produtos */
+
 .produtos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +252,7 @@ nav a {
     width: 100%;
 }
 
-/* Rodapé */
+
 footer {
     background: #182c61;
     color: white;
@@ -273,7 +271,7 @@ footer {
     margin: 0 10px;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .menu-hamburguer {
         display: flex;
@@ -307,5 +305,78 @@ footer {
 @media (max-width: 480px) {
     .categoria-card, .produto-card {
         width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .sobre-container {
+        gap: 40px;
+    }
+    
+    .sobre-texto h2 {
+        font-size: 30px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .menu-hamburguer {
+        display: flex;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    .sobre-container {
+        flex-direction: column;
+    }
+    
+    .sobre-imagem, .sobre-texto {
+        width: 100%;
+    }
+    
+    .sobre-imagem {
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    header {
+        padding: 12px 0;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    #sobre {
+        padding: 60px 0;
+    }
+    
+    .sobre-texto h2 {
+        font-size: 26px;
+    }
+    
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .categorias-grid, .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
     }
 }
